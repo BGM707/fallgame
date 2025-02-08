@@ -68,7 +68,7 @@ class Particle:
         self.vy = random.uniform(-150, 150)
         self.lifetime = random.uniform(0.5, 1.5)  # Duración en segundos
         self.radius = random.randint(2, 4)
-        self.color = COLOR_GOLD  # Color dorado
+        self.color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))  # Color aleatorio
 
     def update(self, dt):
         self.x += self.vx * dt
